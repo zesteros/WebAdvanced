@@ -1,0 +1,19 @@
+que son cookies
+
+ventajas y desventajas de cookies
+
+-no gasta memoria
+-almacenan los ultimos datos valiosos
+
+-ofrece poca privacidad
+-leidas por usuarios no autorizados
+-incrementa carga de red
+-deshabilitar por navegador
+
+que es una sesion
+sesion entre un cliente y servidor q realiza intercambio de info
+para q son utiles
+que es un filtro
+añadir funcion ala app ubicandose entre el usuario y las pags	
+para q sirven los filtros
+menciona las clases principals

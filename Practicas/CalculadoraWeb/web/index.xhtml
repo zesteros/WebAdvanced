@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Calculadora Web</title>
+    </h:head>
+    <h:body style="background-color: blueviolet">
+        Calculadora Web
+        <h:form>
+            <h:panelGrid columns="3" width="500" cellspacing="50">
+                Operador 1 <h:inputText value="#{calculadora.op1}"
+                                       id="op1"
+                                       required="true"
+                                       requiredMessage="Debe escribir un número."
+                                       converterMessage="Debe de ser decimal."/>
+                <h:message for="op1"/>
+                Operador 2 <h:inputText value="#{calculadora.op2}"
+                                       id="op2"
+                                       required="true"
+                                       requiredMessage="Debe escribir un número."
+                                       converterMessage="Debe de ser decimal."/>
+                <h:message for="op2"/>
+                Resultado <h:outputLabel value="#{calculadora.res}"/>
+            </h:panelGrid>
+            <h:panelGrid columns="4" cellspacing="50">
+                <h:commandButton value="+" action="#{calculadora.getSuma()}"/>
+                <h:commandButton value="-" action="#{calculadora.getResta()}"/>
+                <h:commandButton value="*" action="#{calculadora.getMultiplicacion()}"/>
+                <h:commandButton value="/" action="#{calculadora.division()}"/>
+
+            </h:panelGrid>            
+        </h:form>
+        <br />
+    </h:body>
+</html>
+
